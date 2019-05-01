@@ -1,0 +1,42 @@
+<odoo>
+  <data>
+  <record model="ir.ui.view" id="cdpelotas3763_y.tree_reservas">
+      <field name="name">CDPELOTAS3763Y.reservas.tree</field>
+      <field name="model">cdpelotas3763_y.reservas</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="socio"/>
+          <field name="instalacion"/>
+          <field name="fecha_reservas"/>
+        </tree>
+      </field>
+  </record>
+  <record model="ir.ui.view" id="cdpelotas3763_y.list_form">
+      <field name="name">CDPELOTAS3763Y.reservas.form</field>
+      <field name="model">cdpelotas3763_y.reservas</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <div><h1>Alta de reservas</h1></div>
+            <group colspan="2" col="2">
+                <field name="socio"/>
+                <field name="instalacion"/>
+                <field name="fecha_reservas"/>
+            </group>
+            
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="cdpelotas3763_y.action_window_reservas">
+      <field name="name">Gestion de reservas</field>
+      <field name="res_model">cdpelotas3763_y.reservas</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <!-- Top menu item -->
+    <menuitem name="CDPELOTAS3763Y" id="cdpelotas3763_y.menu_root"/>
+    <!-- menu categories -->
+    <menuitem name="Reservas" id="cdpelotas3763_y.reservas_list" parent="cdpelotas3763_y.menu_root" action="cdpelotas3763_y.action_window_reservas"/>
+  </data>
+</odoo>

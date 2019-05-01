@@ -29,6 +29,10 @@ class Instalaciones(models.Model):
  luz = fields.Selection([('si','Si'),('no','No')])
  precio = fields.Integer(string="Precio/hora de la pista")
  estado = fields.Selection([('disponible','Disponible'),('mantenimiento','Mantenimiento')])
-#  #Campo deporte
  deporte_asociado=fields.Many2one('cdpelotas3763_y.deportes',string= "Deporte")
  #Campo reservas
+class Reservas(models.Model):
+ _name = 'cdpelotas3763_y.reservas'
+ socio=fields.One2one('cdpelotas3763_y.socios',string="Socio") 
+ instalacion=fields.One2one('cdpelotas3763_y.instalaciones',string="instalaciones")
+ fecha_reserva=fields.DateTime(string="Fecha de Reserva")  
