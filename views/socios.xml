@@ -35,7 +35,7 @@
       </field>
     </record>
     <!-- actions opening views on models -->
-    <record model="ir.actions.act_window" id="cdpelotas3763_y.action_window">
+    <record model="ir.actions.act_window" id="cdpelotas3763_y.action_window_socios">
       <field name="name">Gestion de Socios</field>
       <field name="res_model">cdpelotas3763_y.socios</field>
       <field name="view_mode">tree,form</field>

@@ -27,7 +27,7 @@
       </field>
     </record>
     <!-- actions opening views on models -->
-    <record model="ir.actions.act_window" id="cdpelotas3763_y.action_window">
+    <record model="ir.actions.act_window" id="cdpelotas3763_y.action_window_deportes">
       <field name="name">Gestion de Deportes</field>
       <field name="res_model">cdpelotas3763_y.deportes</field>
       <field name="view_mode">tree,form</field>

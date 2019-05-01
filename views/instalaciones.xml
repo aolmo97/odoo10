@@ -37,7 +37,7 @@
       </field>
     </record> 
     <!-- actions opening views on models -->
-    <record model="ir.actions.act_window" id="cdpelotas3763_y.action_window">
+    <record model="ir.actions.act_window" id="cdpelotas3763_y.action_window_instalaciones">
       <field name="name">Gestion de Instalaciones</field>
       <field name="res_model">cdpelotas3763_y.instalaciones</field>
       <field name="view_mode">tree,form</field>
