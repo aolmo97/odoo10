@@ -20,7 +20,10 @@ class Socio(models.Model):
  direccion = fields.Char(string="Direccion")
  telefono = fields.Integer(string="Teléfono")
  fecha_alta = fields.Date(string="Fecha de Alta")
- #Campo reservas
+ reservas_realizadas=fields.One2many('cdpelotas3763_y.reservas',
+     'socio',
+     string="Reservas Realizadas"
+  )
  #Modelo Instalaciones
 class Instalaciones(models.Model):
  _name = 'cdpelotas3763_y.instalaciones'
@@ -32,6 +35,10 @@ class Instalaciones(models.Model):
  estado = fields.Selection([('disponible','Disponible'),('mantenimiento','Mantenimiento')])
  deporte_asociado=fields.Many2one('cdpelotas3763_y.deportes',string= "Deporte")
  #Campo reservas
+ reservas=fields.One2many('cdpelotas3763_y.reservas',
+     'instalacion',
+     string="Reservas de la Instalacion"
+  )
 class Reservas(models.Model):
  _name = 'cdpelotas3763_y.reservas'
  socio=fields.Many2one('cdpelotas3763_y.socios',string="Socio") 

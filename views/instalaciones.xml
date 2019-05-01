@@ -12,6 +12,7 @@
           <field name="precio"/>
           <field name="estado"/>
           <field name="deporte_asociado"/>
+          <field name="reservas"/>
         </tree>
       </field>
     </record>
@@ -30,6 +31,7 @@
                 <field name="precio"/>
                 <field name="estado"/>
                 <field name="deporte_asociado"/>
+                <field name="reservas"/>
             </group>
             
           </sheet>
