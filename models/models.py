@@ -22,7 +22,7 @@ class Socio(models.Model):
  #Campo reservas
  #Modelo Instalaciones
 class Instalaciones(models.Model):
- name = 'cdpelotas3763_y.instalaciones'
+ _name = 'cdpelotas3763_y.instalaciones'
  num_pista = fields.Integer(string="Numero de pista")
  nombre_pista = fields.Char(string="Nombre de Pista")
  superficie = fields.Selection([('cemento','Cemento'),('hierba','Hierba'),('moqueta','Moqueta'),('tierra','Tierra')])
