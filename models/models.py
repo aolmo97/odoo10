@@ -21,14 +21,14 @@ class Socio(models.Model):
  fecha_alta = fields.Date(string="Fecha de Alta")
  #Campo reservas
  #Modelo Instalaciones
-# class Instalaciones(models.Model):
-#  _name = 'cdpelotas3763_y.instalaciones'
-#  num_pista = fields.Integer(string="Numero de pista")
-#  nombre_pista = fields.Char(string="Nombre de Pista")
-#  superficie = fields.Selection([('cemento','Cemento'),('hierba','Hierba'),('moqueta','Moqueta'),('tierra','Tierra')])
-#  luz = fields.Selection([('si','Si'),('no','No')])
-#  precio = fields.Integer(string="Precio/hora de la pista")
-#  estado = fields.Selection([('disponible','Disponible'),('mantenimiento','Mantenimiento')])
+class Instalaciones(models.Model):
+ name = 'cdpelotas3763_y.instalaciones'
+ num_pista = fields.Integer(string="Numero de pista")
+ nombre_pista = fields.Char(string="Nombre de Pista")
+ superficie = fields.Selection([('cemento','Cemento'),('hierba','Hierba'),('moqueta','Moqueta'),('tierra','Tierra')])
+ luz = fields.Selection([('si','Si'),('no','No')])
+ precio = fields.Integer(string="Precio/hora de la pista")
+ estado = fields.Selection([('disponible','Disponible'),('mantenimiento','Mantenimiento')])
 #  #Campo deporte
 #  deporte_asociado=fields.Many2one('cdpelotas3763_y.deportes',string= "Deporte")
  #Campo reservas
