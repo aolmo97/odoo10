@@ -16,7 +16,7 @@
       </field>
     </record>
   <record model="ir.ui.view" id="cdpelotas3763_y.list_form">
-      <field name="name">CDPELOTAS3763Y.socios.form</field>
+      <field name="name">CDPELOTAS3763Y.instalaciones.form</field>
       <field name="model">cdpelotas3763_y.instalaciones</field>
       <field name="arch" type="xml">
         <form>
