@@ -26,6 +26,7 @@
     'data': [
         # 'security/ir.model.access.csv',
         'views/socios.xml',
+        'views/deportes.xml','
         'views/instalaciones.xml',
     ],
     # # only loaded in demonstration mode
