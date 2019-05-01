@@ -19,7 +19,10 @@
           <sheet>
             <div><h1>Alta de reservas</h1></div>
             <group colspan="2" col="2">
-                <field name="socio"/>
+                <field name="socio">
+                    <field name="nombre"/>
+                    <field name="apellidos"/>
+                </field>
                 <field name="instalacion"/>
                 <field name="fecha_reservas"/>
             </group>
