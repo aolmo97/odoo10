@@ -45,7 +45,7 @@
     <!-- Top menu item -->
     <menuitem name="CDPELOTAS3763Y" id="cdpelotas3763_y.menu_root"/>
     <!-- menu categories -->
-    <menuitem name="instalaciones" id="cdpelotas3763_y.instalaciones" parent="cdpelotas3763_y.menu_root" action="cdpelotas3763_y.action_window"/>
+    <menuitem name="instalaciones" id="cdpelotas3763_y.instalaciones" parent="cdpelotas3763_y.menu_root" action="cdpelotas3763_y.action_window_instalaciones"/>
   
   </data>
 </odoo>

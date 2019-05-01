@@ -43,7 +43,7 @@
     <!-- Top menu item -->
     <menuitem name="CDPELOTAS3763Y" id="cdpelotas3763_y.menu_root"/>
     <!-- menu categories -->
-    <menuitem name="Socios" id="cdpelotas3763_y.socios" parent="cdpelotas3763_y.menu_root" action="cdpelotas3763_y.action_window"/>
+    <menuitem name="Socios" id="cdpelotas3763_y.socios" parent="cdpelotas3763_y.menu_root" action="cdpelotas3763_y.action_window_socios"/>
    
   </data>
 </odoo>
