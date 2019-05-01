@@ -35,6 +35,6 @@
     <!-- Top menu item -->
     <menuitem name="CDPELOTAS3763Y" id="cdpelotas3763_y.menu_root"/>
     <!-- menu categories -->
-    <menuitem name="Deportes" id="cdpelotas3763_y.deportes" parent="cdpelotas3763_y.menu_root" action="cdpelotas3763_y.action_window"/>
+    <menuitem name="Deportes" id="cdpelotas3763_y.deportes_list" parent="cdpelotas3763_y.menu_root" action="cdpelotas3763_y.action_window"/>
   </data>
 </odoo>
