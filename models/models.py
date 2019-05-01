@@ -36,4 +36,4 @@ class Reservas(models.Model):
  _name = 'cdpelotas3763_y.reservas'
  socio=fields.Many2one('cdpelotas3763_y.socios',string="Socio") 
  instalacion=fields.Many2one('cdpelotas3763_y.instalaciones',string="instalaciones")
- fecha_reservas=fields.DateTime(string="Fecha de Reserva")
+ fecha_reservas=fields.Datetime(string="Fecha de Reserva")
