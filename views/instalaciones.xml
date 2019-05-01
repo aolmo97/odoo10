@@ -11,6 +11,7 @@
           <field name="luz"/>
           <field name="precio"/>
           <field name="estado"/>
+          <field name="deporte_asociado"/>
         </tree>
       </field>
     </record>
@@ -28,6 +29,7 @@
                 <field name="luz"/>
                 <field name="precio"/>
                 <field name="estado"/>
+                <field name="deporte_asociado"/>
             </group>
             
           </sheet>

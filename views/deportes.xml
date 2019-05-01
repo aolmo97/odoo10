@@ -6,7 +6,7 @@
       <field name="arch" type="xml">
         <tree>
           <field name="nombre_deporte"/>
-          <!-- <field name="instalaciones_asociadas"/> -->
+          <field name="instalaciones_asociadas"/>
         </tree>
       </field>
   </record>
@@ -19,7 +19,7 @@
             <div><h1>Alta de Deportes</h1></div>
             <group colspan="2" col="2">
                 <field name="nombre_deporte"/>
-                <!-- <field name="instalaciones_asociadas"/> -->
+                <field name="instalaciones_asociadas"/>
             </group>
             
           </sheet>
