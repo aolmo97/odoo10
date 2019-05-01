@@ -33,6 +33,6 @@ class Instalaciones(models.Model):
  #Campo reservas
 class Reservas(models.Model):
  _name = 'cdpelotas3763_y.reservas'
- socio=fields.One2one('cdpelotas3763_y.socios',string="Socio") 
- instalacion=fields.One2one('cdpelotas3763_y.instalaciones',string="instalaciones")
- fecha_reserva=fields.DateTime(string="Fecha de Reserva")  
+ socio=fields.Many2one('cdpelotas3763_y.socios',string="Socio") 
+ instalacion=fields.Many2one('cdpelotas3763_y.instalaciones',string="instalaciones")
+ fecha_reserva=fields.DateTime(string="Fecha de Reserva")
