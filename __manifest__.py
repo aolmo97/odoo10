@@ -26,12 +26,12 @@
     'data': [
         # 'security/ir.model.access.csv',
         'views/socios.xml',
-        'views/instalaciones.xml'
+        'views/instalaciones.xml',
     ],
     # # only loaded in demonstration mode
     # 'demo': [
     #     'demo/demo.xml',
     # ],
     'application': True,
-    
+
 }
