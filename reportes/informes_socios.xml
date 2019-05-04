@@ -8,7 +8,7 @@
         file="cdpelotas3763_y.socios.report_session"
         report_type="qweb-pdf" />
 
-    <template id="cdpelotas3763_y.socios.report_session_view">
+    <template id="template_cdpelotas3763_y.socios.report_session_view">
         <t t-call="report.html_container">
             <t t-foreach="docs" t-as="doc">
                 <t t-call="report.external_layout">
