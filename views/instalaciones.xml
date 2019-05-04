@@ -12,7 +12,15 @@
           <field name="precio"/>
           <field name="estado"/>
           <field name="deporte_asociado"/>
-          <field name="reservas"/>
+          <field name="reservas"> 
+             <field name="socio">
+                <field name="nombre"/>
+             </field>
+             <field name="instalaciones">
+                <field name="nombre_pista"/>
+             </field>
+             <field name="fecha_reservas"/>
+          </field>
         </tree>
       </field>
     </record>
