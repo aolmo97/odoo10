@@ -14,10 +14,10 @@ class Deporte(models.Model):
 class Socio(models.Model):
  _name = 'cdpelotas3763_y.socios'
  _rec_name="nombre"
-_sql_constraints = [
-        ('nom_socio_id',
-         'UNIQUE (num_socio)',
-         'Ya existe un numero de socio con ese id')]
+ _sql_constraints = [
+   ('nom_socio_id',
+   'UNIQUE (num_socio)',
+   'Ya existe un numero de socio con ese id')]
  num_socio = fields.Integer(string="Numero de socio")
  nombre = fields.Char(string="Nombre")
  apellidos = fields.Char(string="Apellidos")
