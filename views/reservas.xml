@@ -10,6 +10,8 @@
           <field name="apellidos"/>
           <field name="instalacion"/>
           <field name="fecha_reservas"/>
+          <field name="fecha_reservas2"/>
+          <field name="fecha_reservas3"/>
         </tree>
       </field>
   </record>
