@@ -1,0 +1,37 @@
+<odoo>
+<data>
+    <report
+        id="report_socios"
+        model="cdpelotas3763_y.socios"
+        string="Session Report"
+        name="cdpelotas3763_y.socios.report_session_view"
+        file="cdpelotas3763_y.socios.report_session"
+        report_type="qweb-pdf" />
+
+    <template id="cdpelotas3763_y.socios.report_session_view">
+        <t t-call="report.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="report.external_layout">
+                    <div class="page">
+                        <h1>Socios</h1>
+                        <table border="1">
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                            <tr>
+                                <td>
+                                    <span t-field="doc.nombre"/>
+                                </td>
+                                 <td>
+                                    <span t-field="doc.apellidos"/>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</data>
+</odoo>

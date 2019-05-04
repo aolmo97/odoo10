@@ -4,7 +4,7 @@ from odoo import models, fields, api
 #Modelo Deporte
 class Deporte(models.Model):
   _name = 'cdpelotas3763_y.deportes'
-
+  _rec_name='nombre_deporte'
   nombre_deporte = fields.Char(string="Nombre del Deporte")
   instalaciones_asociadas=fields.One2many('cdpelotas3763_y.instalaciones',
      'deporte_asociado',

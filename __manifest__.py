@@ -20,7 +20,7 @@
     'version': '1.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base','report'],
 
     # always loaded
     'data': [
@@ -29,6 +29,7 @@
         'views/instalaciones.xml',
         'views/reservas.xml',
         'views/deportes.xml',
+        'reportes/informes_socios.xml',
     ],
     # # only loaded in demonstration mode
     # 'demo': [
