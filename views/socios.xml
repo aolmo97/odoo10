@@ -29,9 +29,11 @@
               <field name="direccion"/>
               <field name="telefono"/>
               <field name="fecha_alta"/>
+              
+            </group>
+            <group>
               <field name="reservas_realizadas"/>
             </group>
-            
           </sheet>
         </form>
       </field>
