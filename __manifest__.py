@@ -17,7 +17,7 @@
     # Check https://github.com/odoo/odoo/blob/10.0/odoo/addons/base/module/module_data.xml
     # for the full list
     'category': 'Gestión de Deportes',
-    'version': '0.1',
+    'version': '1.1',
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
