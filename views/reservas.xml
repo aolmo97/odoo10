@@ -6,8 +6,9 @@
       <field name="arch" type="xml">
         <tree>
           <field name="socio">
-          <field name="nombre"/>
-          <field name="apellidos"/>
+            <field name="nombre"/>
+            <field name="apellidos"/>
+          </field>
           <field name="instalacion"/>
           <field name="fecha_reservas"/>
         </tree>
