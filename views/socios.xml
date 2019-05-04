@@ -22,7 +22,7 @@
         <form>
           <sheet>
             <div><h1>Alta de Socios</h1></div>
-            <group colspan="2" col="2">
+            <group>
               <field name="num_socio"/>
               <field name="nombre"/>
               <field name="apellidos"/>
