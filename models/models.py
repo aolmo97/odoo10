@@ -14,7 +14,7 @@ class Deporte(models.Model):
 class Socio(models.Model):
  _name = 'cdpelotas3763_y.socios'
  _rec_name="nombre"
-  _sql_constraints = [
+_sql_constraints = [
         ('nom_socio_id',
          'UNIQUE (num_socio)',
          'Ya existe un numero de socio con ese id')]
