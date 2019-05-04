@@ -19,15 +19,12 @@
       <field name="model">cdpelotas3763_y.reservas</field>
       <field name="arch" type="xml">
         <form>
-          <sheet>
             <div><h1>Alta de reservas</h1></div>
             <group colspan="2" col="2">
                 <field name="socio"/>
                 <field name="instalacion"/>
                 <field name="fecha_reservas"/>
             </group>
-            
-          </sheet>
         </form>
       </field>
     </record>

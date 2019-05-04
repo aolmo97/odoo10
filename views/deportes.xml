@@ -15,14 +15,11 @@
       <field name="model">cdpelotas3763_y.deportes</field>
       <field name="arch" type="xml">
         <form>
-          <sheet>
             <div><h1>Alta de Deportes</h1></div>
             <group colspan="2" col="2">
                 <field name="nombre_deporte"/>
                 <field name="instalaciones_asociadas"/>
             </group>
-            
-          </sheet>
         </form>
       </field>
     </record>

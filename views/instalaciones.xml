@@ -29,7 +29,6 @@
       <field name="model">cdpelotas3763_y.instalaciones</field>
       <field name="arch" type="xml">
         <form>
-          <sheet>
             <div><h1>Alta de Instalacion</h1></div>
             <group colspan="2" col="2">
                 <field name="num_pista"/>
@@ -42,7 +41,6 @@
                 <field name="reservas"/>
             </group>
             
-          </sheet>
         </form>
       </field>
     </record> 

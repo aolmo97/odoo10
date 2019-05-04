@@ -19,7 +19,6 @@
       <field name="model">cdpelotas3763_y.socios</field>
       <field name="arch" type="xml">
         <form>
-          <sheet>
             <div><h1>Alta de Socios</h1></div>
             <group>
               <field name="num_socio"/>
@@ -29,8 +28,6 @@
               <field name="telefono"/>
               <field name="fecha_alta"/>
             </group>
-            
-          </sheet>
         </form>
       </field>
     </record>
