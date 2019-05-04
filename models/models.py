@@ -13,7 +13,7 @@ class Deporte(models.Model):
 #Modelo Socio
 class Socio(models.Model):
  _name = 'cdpelotas3763_y.socios'
-
+ _rec_name="nombre"
  num_socio = fields.Integer(string="Numero de socio")
  nombre = fields.Char(string="Nombre")
  apellidos = fields.Char(string="Apellidos")
@@ -27,6 +27,7 @@ class Socio(models.Model):
  #Modelo Instalaciones
 class Instalaciones(models.Model):
  _name = 'cdpelotas3763_y.instalaciones'
+ _rec_name="nombre_pista"
  num_pista = fields.Integer(string="Numero de pista")
  nombre_pista = fields.Char(string="Nombre de Pista")
  superficie = fields.Selection([('cemento','Cemento'),('hierba','Hierba'),('moqueta','Moqueta'),('tierra','Tierra')])
