@@ -11,7 +11,7 @@
     """,
 
     'author': "Antonio Olmo López",
-    'website': "www.iestrassierra.conm",
+    'website': "www.iestrassierra.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/10.0/odoo/addons/base/module/module_data.xml
