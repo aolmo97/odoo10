@@ -20,10 +20,10 @@ class Socio(models.Model):
  direccion = fields.Char(string="Direccion")
  telefono = fields.Integer(string="Teléfono")
  fecha_alta = fields.Date(string="Fecha de Alta")
- reservas_realizadas=fields.One2many('cdpelotas3763_y.reservas',
-     'socio',
-     string="Reservas Realizadas"
-  )
+#  reservas_realizadas=fields.One2many('cdpelotas3763_y.reservas',
+#      'socio',
+#      string="Reservas Realizadas"
+#   )
  #Modelo Instalaciones
 class Instalaciones(models.Model):
  _name = 'cdpelotas3763_y.instalaciones'
