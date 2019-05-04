@@ -14,6 +14,10 @@ class Deporte(models.Model):
 class Socio(models.Model):
  _name = 'cdpelotas3763_y.socios'
  _rec_name="nombre"
+  _sql_constraints = [
+        ('nom_socio_id',
+         'UNIQUE (num_socio)',
+         'Ya existe un numero de socio con ese id')]
  num_socio = fields.Integer(string="Numero de socio")
  nombre = fields.Char(string="Nombre")
  apellidos = fields.Char(string="Apellidos")
@@ -28,6 +32,10 @@ class Socio(models.Model):
 class Instalaciones(models.Model):
  _name = 'cdpelotas3763_y.instalaciones'
  _rec_name="nombre_pista"
+ _sql_constraints = [
+        ('num_pista_id',
+         'UNIQUE (num_pista)',
+         'Ya existe un numero de pista con ese id')]
  num_pista = fields.Integer(string="Numero de pista")
  nombre_pista = fields.Char(string="Nombre de Pista")
  superficie = fields.Selection([('cemento','Cemento'),('hierba','Hierba'),('moqueta','Moqueta'),('tierra','Tierra')])
