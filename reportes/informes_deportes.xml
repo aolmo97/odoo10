@@ -8,18 +8,19 @@
                     <div class="instalaciones_asociadas">
                         <h2>Instalaciones Asociadas</h2>
                         <table border='1'>
+                        <tr>
                             <th>Nombre</th>
                             <th>Superficie</th>
                             <th>Luz</th>
                             <th>Precio</th>
                             <th>Estado</th>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                        </tr>
+                         <tr>   
+                                <td t-field="o.instalaciones_asociadas.nombre_pista"></td>
+                                <td t-field="o.instalaciones_asociadas.superficie"></td>
+                                <td t-field="o.instalaciones_asociadas.luz"></td>
+                                <td t-field="o.instalaciones_asociadas.precio"></td>
+                                <td t-field="o.instalaciones_asociadas.estado"></td>
                             </tr>
                         </table>
                     
