@@ -6,37 +6,35 @@
                 <div class="page">
                     <div class="info_instalaciones">
                         <table border='1' class="table table-bordered mt32">
-                        <tr>
-                            <th class="text-center">Nombre Pista</th>
-                            <th class="text-center">Superficie</th>
-                            <th class="text-center">Luz</th>
-                            <th class="text-center">Precio</th>
-                            <th class="text-center">Estado</th>
-                        </tr>
-                         <tr class="text-center">   
-                                <td> <span t-field="o.nombre_pista"/></td>
-                                <td> <span t-field="o.superficie"/></td>
-                                <td><span t-field="o.luz"/></td>
-                                <td><span t-field="o.precio"/></td>
-                                <td><span t-field="o.estado"/></td>
-                         </tr>
-                        <h2>Reservas Asociadas</h2>
-                        <table border='1' class="table table-bordered mt32">
-                        <tr>
-                            <th class="text-center">Socio</th>
-                            <th class="text-center">Fecha reserva</th>
-                        </tr>
-                         <tr class="text-center" t-foreach="o.reservas.socio" t-as="ra">   
-                                <td><span t-field="ra.nombre"/></td>
-                                <td><span t-field="ra.apellidos"/></td>
+                            <tr>
+                                <th class="text-center">Nombre Pista</th>
+                                <th class="text-center">Superficie</th>
+                                <th class="text-center">Luz</th>
+                                <th class="text-center">Precio</th>
+                                <th class="text-center">Estado</th>
                             </tr>
-                        </table>
-                    
+                            <tr class="text-center">   
+                                    <td> <span t-field="o.nombre_pista"/></td>
+                                    <td> <span t-field="o.superficie"/></td>
+                                    <td><span t-field="o.luz"/></td>
+                                    <td><span t-field="o.precio"/></td>
+                                    <td><span t-field="o.estado"/></td>
+                            </tr>
+                            <h2>Reservas Asociadas</h2>
+                            <table border='1' class="table table-bordered mt32">
+                                <tr>
+                                    <th class="text-center">Socio</th>
+                                    <th class="text-center">Fecha reserva</th>
+                                </tr>
+                                <tr class="text-center" t-foreach="o.reservas.socio" t-as="ra">   
+                                        <td><span t-field="ra.nombre"/></td>
+                                        <td><span t-field="ra.apellidos"/></td>
+                                </tr>
+                            </table>
+                        
                         </table>
                        
                     </div>
-                    </div>
-                    
                 </div>
             </t>
         </t>
