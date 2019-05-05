@@ -50,7 +50,7 @@
         file="cdpelotas3763_y.socios.socios_template_report_report_template"
         model="cdpelotas3763_y.socios"
         report_type="qweb-pdf"
-        string="Listado de Deportes"
+        string="Listado de Socios"
         menu="True"/>
   </data>
 </odoo>
