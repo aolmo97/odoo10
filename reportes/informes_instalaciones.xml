@@ -4,7 +4,6 @@
         <t t-call="report.html_container">
             <t t-foreach="docs" t-as="o">
                 <div class="page">
-                    <h1 t-field="o.nombre_deporte" />
                     <div class="info_instalaciones">
                         <table border='1' class="table table-bordered mt32">
                         <tr>
@@ -31,12 +30,9 @@
                             <th class="text-center">Socio</th>
                             <th class="text-center">Fecha reserva</th>
                         </tr>
-                         <tr class="text-center" t-foreach="o.instalaciones_asociadas" t-as="ia">   
-                                <td> <span t-field="ia.nombre_pista"/></td>
-                                <td> <span t-field="ia.superficie"/></td>
-                                <td><span t-field="ia.luz"/></td>
-                                <td><span t-field="ia.precio"/></td>
-                                <td><span t-field="ia.estado"/></td>
+                         <tr class="text-center" t-foreach="o.reservas" t-as="ra">   
+                                <td><span t-field="ra.socio.nombre"/></td>
+                                <td><span t-field="ra.fecha_reservas"/></td>
                             </tr>
                         </table>
                     
