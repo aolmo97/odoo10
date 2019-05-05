@@ -21,9 +21,7 @@
                                 <td><span t-field="o.estado"/></td>
                             </tr>
                         </table>
-                    
-                    </div>
-                    <div class="reservas_asociadas">
+                        <div class="reservas_asociadas">
                         <h2>Reservas Asociadas</h2>
                         <table border='1' class="table table-bordered mt32">
                         <tr>
@@ -37,6 +35,8 @@
                         </table>
                     
                     </div>
+                    </div>
+                    
                 </div>
             </t>
         </t>
