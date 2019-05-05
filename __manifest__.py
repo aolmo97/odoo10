@@ -30,6 +30,7 @@
         'views/reservas.xml',
         'views/deportes.xml',
         'reportes/informes_socios.xml',
+        'reportes/informes_deportes.xml',
     ],
     # # only loaded in demonstration mode
     # 'demo': [
