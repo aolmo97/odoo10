@@ -45,9 +45,9 @@
     <!-- menu categories -->
     <menuitem name="Socios" id="cdpelotas3763_y.socios" parent="cdpelotas3763_y.menu_root" action="cdpelotas3763_y.action_window_socios"/>
     <!--Informe -->
-    <report id="cdpelotas3763_y.socios.socios_template_report"
-        name="cdpelotas3763_y.socios.socios_template_report_template"
-        file="cdpelotas3763_y.socios.socios_template_report_report_template"
+    <report id="cdpelotas3763_y.socios_template_report"
+        name="cdpelotas3763_y.socios_template_report_template"
+        file="cdpelotas3763_y.socios_template_report_report_template"
         model="cdpelotas3763_y.socios"
         report_type="qweb-pdf"
         string="Listado de Socios"
