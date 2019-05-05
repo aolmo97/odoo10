@@ -27,7 +27,7 @@
                                     <th class="text-center">Fecha reserva</th>
                                 </tr>
                                 <tr class="text-center" t-foreach="o.reservas.socio" t-as="ra">   
-                                        <td><span t-field="ra.nombre"/></td>
+                                        <td><span t-field="ra.nombre"/> <span t-field="ra.apellidos"/></td>
                                         <td><span t-field="o.reservas.fecha_reservas"/></td>
                                 </tr>
                             </table>
