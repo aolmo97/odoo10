@@ -5,7 +5,7 @@
             <t t-foreach="docs" t-as="o">
                 <div class="page">
                     <div class="info_instalaciones">
-                        <table border='1' class="table table-bordered mt32">
+                        <table border='1' class="table table-bordered mt32"  t-foreach="docs" t-as="o">
                         <tr>
                             <th class="text-center">Nombre Pista</th>
                             <th class="text-center">Superficie</th>
@@ -13,7 +13,7 @@
                             <th class="text-center">Precio</th>
                             <th class="text-center">Estado</th>
                         </tr>
-                         <tr class="text-center" t-foreach="docs" t-as="o">   
+                         <tr class="text-center">   
                                 <td> <span t-field="o.nombre_pista"/></td>
                                 <td> <span t-field="o.superficie"/></td>
                                 <td><span t-field="o.luz"/></td>
