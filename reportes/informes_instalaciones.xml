@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="cdpelotas3763_y.deportes_template_report_template">
+    <template id="cdpelotas3763_y.instalaciones_template_report_template">
         <t t-call="report.html_container">
             <t t-foreach="docs" t-as="o">
                 <div class="page">
                     <h1 t-field="o.nombre_deporte" />
-                    <div class="instalaciones_asociadas">
-                        <h2>Instalaciones Asociadas</h2>
+                    <div class="info_instalaciones">
+                        <h1 t-field="" />
                         <table border='1' class="table table-bordered mt32">
                         <tr>
-                            <th class="text-center">Nombre</th>
+                            <th class="text-center">Nombre Pista</th>
                             <th class="text-center">Superficie</th>
                             <th class="text-center">Luz</th>
                             <th class="text-center">Precio</th>
                             <th class="text-center">Estado</th>
+                        </tr>
+                         <tr class="text-center" t-foreach="docs" t-as="o">   
+                                <td> <span t-field="o.nombre_pista"/></td>
+                                <td> <span t-field="o.superficie"/></td>
+                                <td><span t-field="o.luz"/></td>
+                                <td><span t-field="o.precio"/></td>
+                                <td><span t-field="o.estado"/></td>
+                            </tr>
+                        </table>
+                    
+                    </div>
+                    <div class="reservas_asociadas">
+                        <h2>Reservas Asociadas</h2>
+                        <table border='1' class="table table-bordered mt32">
+                        <tr>
+                            <th class="text-center">Socio</th>
+                            <th class="text-center">Fecha reserva</th>
                         </tr>
                          <tr class="text-center" t-foreach="o.instalaciones_asociadas" t-as="ia">   
                                 <td> <span t-field="ia.nombre_pista"/></td>

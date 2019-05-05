@@ -31,6 +31,7 @@
         'views/deportes.xml',
         'reportes/informes_socios.xml',
         'reportes/informes_deportes.xml',
+        'reportes/informes_instalaciones.xml',
     ],
     # # only loaded in demonstration mode
     # 'demo': [
