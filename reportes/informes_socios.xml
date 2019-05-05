@@ -1,4 +1,4 @@
-<template id="odoo_qweb_report_sample.product_template_report_template">
+<template id="cdpelotas3763_y.socios.socios_template_report_template">
     <t t-call="report.html_container">
         <t t-foreach="docs" t-as="o">
             <div class="page">
@@ -8,9 +8,9 @@
     </t>
 </template>
 
-<report id="odoo_qweb_report_sample.product_template_report"
-        name="odoo_qweb_report_sample.product_template_report_template"
-        file="odoo_qweb_report_sample.product_template_report_template"
+        <report id="cdpelotas3763_y.socios.socios_template_report"
+        name="cdpelotas3763_y.socios.socios_template_report_template"
+        file="cdpelotas3763_y.socios.socios_template_report_template"
         model="cdpelotas3763_y.socios"
         report_type="qweb-pdf"
         string="Product Report"
