@@ -5,7 +5,7 @@
             <t t-foreach="docs" t-as="o">
                 <div class="page">
                     <div class="info_instalaciones">
-                        <table border='1' class="table table-bordered mt32"  t-foreach="docs" t-as="o">
+                        <table border='1' class="table table-bordered mt32">
                         <tr>
                             <th class="text-center">Nombre Pista</th>
                             <th class="text-center">Superficie</th>
@@ -19,21 +19,21 @@
                                 <td><span t-field="o.luz"/></td>
                                 <td><span t-field="o.precio"/></td>
                                 <td><span t-field="o.estado"/></td>
-                            </tr>
-                        </table>
-                        <div class="reservas_asociadas">
+                         </tr>
                         <h2>Reservas Asociadas</h2>
                         <table border='1' class="table table-bordered mt32">
                         <tr>
                             <th class="text-center">Socio</th>
                             <th class="text-center">Fecha reserva</th>
                         </tr>
-                         <tr class="text-center" t-foreach="o.reservas" t-as="ra">   
-                                <td><span t-field="ra.socio.nombre"/></td>
-                                <td><span t-field="ra.fecha_reservas"/></td>
+                         <tr class="text-center" t-foreach="o.reservas.socio" t-as="ra">   
+                                <td><span t-field="ra.nombre"/></td>
+                                <td><span t-field="ra.apellidos"/></td>
                             </tr>
                         </table>
                     
+                        </table>
+                       
                     </div>
                     </div>
                     
