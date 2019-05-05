@@ -15,6 +15,7 @@
         </tree>
       </field>
     </record>
+    
   <record model="ir.ui.view" id="cdpelotas3763_y.list_form">
       <field name="name">CDPELOTAS3763Y.socios.form</field>
       <field name="model">cdpelotas3763_y.socios</field>
@@ -43,6 +44,13 @@
     <menuitem name="CDPELOTAS3763Y" id="cdpelotas3763_y.menu_root"/>
     <!-- menu categories -->
     <menuitem name="Socios" id="cdpelotas3763_y.socios" parent="cdpelotas3763_y.menu_root" action="cdpelotas3763_y.action_window_socios"/>
-   
+    <!--Informe -->
+    <report id="cdpelotas3763_y.socios.socios_template_report"
+        name="cdpelotas3763_y.socios.socios_template_report_template"
+        file="cdpelotas3763_y.socios.socios_template_report_report_template"
+        model="cdpelotas3763_y.socios"
+        report_type="qweb-pdf"
+        string="Listado de Deportes"
+        menu="True"/>
   </data>
 </odoo>
