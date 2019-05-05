@@ -4,7 +4,7 @@
         <t t-call="report.html_container">
             <t t-foreach="docs" t-as="o">
                 <div class="page">
-                    <t t-esc="o.nombre" />
+                    <t t-esc="o.nombre_deporte" />
                     <div class="instalaciones_asociadas">
                         <h2>Instalaciones Asociadas</h2>
                         <table border='1'>
