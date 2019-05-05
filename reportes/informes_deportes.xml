@@ -16,11 +16,11 @@
                             <th>Estado</th>
                         </tr>
                          <tr>   
-                                <td t-field="o.instalaciones_asociadas.nombre_pista"></td>
-                                <td t-field="o.instalaciones_asociadas.superficie"></td>
-                                <td t-field="o.instalaciones_asociadas.luz"></td>
-                                <td t-field="o.instalaciones_asociadas.precio"></td>
-                                <td t-field="o.instalaciones_asociadas.estado"></td>
+                                <td> <span t-field="o.instalaciones_asociadas.nombre_pista"/></td>
+                                <td> <span t-field="o.instalaciones_asociadas.superficie"/></td>
+                                <td><span  t-field="o.instalaciones_asociadas.luz"/></td>
+                                <td><span t-field="o.instalaciones_asociadas.precio"/></td>
+                                <td><span t-field="o.instalaciones_asociadas.estado"/></td>
                             </tr>
                         </table>
                     
