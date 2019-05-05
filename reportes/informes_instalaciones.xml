@@ -6,7 +6,6 @@
                 <div class="page">
                     <h1 t-field="o.nombre_deporte" />
                     <div class="info_instalaciones">
-                        <h1 t-field="" />
                         <table border='1' class="table table-bordered mt32">
                         <tr>
                             <th class="text-center">Nombre Pista</th>
