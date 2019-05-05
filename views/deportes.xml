@@ -33,5 +33,13 @@
     <menuitem name="CDPELOTAS3763Y" id="cdpelotas3763_y.menu_root"/>
     <!-- menu categories -->
     <menuitem name="Deportes" id="cdpelotas3763_y.deportes_list" parent="cdpelotas3763_y.menu_root" action="cdpelotas3763_y.action_window_deportes"/>
+    <!-- Informes -->
+    <report id="cdpelotas3763_y.deportes_template_report"
+        name="cdpelotas3763_y.deportes_template_report_template"
+        file="cdpelotas3763_y.deportes_template_report_template"
+        model="cdpelotas3763_y.deportes"
+        report_type="qweb-pdf"
+        string="Listado de Deportes"
+        menu="True"/>
   </data>
 </odoo>
