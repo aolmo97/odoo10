@@ -50,6 +50,11 @@ class Instalaciones(models.Model):
   )
 class Reservas(models.Model):
  _name = 'cdpelotas3763_y.reservas'
+ _sql_constraints = [
+  ('num_reserva_id',
+  'UNIQUE (fecha_reservas,instalacion)',
+  'Ya existe una reserva en ese intervalo de tiempo')]
  socio=fields.Many2one('cdpelotas3763_y.socios',string="Socio") 
  instalacion=fields.Many2one('cdpelotas3763_y.instalaciones',string="instalaciones")
  fecha_reservas=fields.Datetime(string="Fecha de Reserva")
+ 
