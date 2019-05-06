@@ -21,9 +21,7 @@
                                 <td><span t-field="s.telefono"/></td>
                                 <td><span t-field="s.fecha_alta"/></td>
                          </tr>
-                         <tr>
-                            <td><h1>Historial de Reservas</h1></td>
-                         </tr>
+                        <h1>Historial de Reservas</h1>
                         </table>
                         <table border='1' class="table table-bordered mt32">
                         <tr>
