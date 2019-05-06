@@ -61,7 +61,7 @@ class Reservas(models.Model):
  @api.one
  @api.constrains('fecha_reservas')
  def _check_name_size(self):
-  ultima_fecha=self.env['cdpelotas3763_y.reservas'].browse(1)
+  ultima_fecha=self.env['cdpelotas3763_y.reservas'].browse(1,9999)
   if len(self.ultima_fecha) > 5:
       raise ValidationError('Must have 5 chars! '+ultima_fecha)
  
