@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from datetime import timedelta
 from odoo import models, fields, api
+from odoo.exceptions import ValidationError
 #Modelo Deporte
 class Deporte(models.Model):
   _name = 'cdpelotas3763_y.deportes'
@@ -57,4 +58,9 @@ class Reservas(models.Model):
  socio=fields.Many2one('cdpelotas3763_y.socios',string="Socio") 
  instalacion=fields.Many2one('cdpelotas3763_y.instalaciones',string="instalaciones")
  fecha_reservas=fields.Datetime(string="Fecha de Reserva")
+ @api.one
+ @api.constrains('fecha_reservas')
+ def _check_name_size(self):
+  if len(self.name) > 5:
+    raise ValidationError('Must have 5 chars!')
  
