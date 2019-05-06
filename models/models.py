@@ -61,6 +61,6 @@ class Reservas(models.Model):
  @api.one
  @api.constrains('fecha_reservas')
  def _check_name_size(self):
-  if len(self.name) > 5:
+  if len(self.fecha_reservas) > 5:
     raise ValidationError('Must have 5 chars!')
  
