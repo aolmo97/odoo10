@@ -54,5 +54,5 @@ class Reservas(models.Model):
   'Ya existe una reserva en ese intervalo de tiempo')]
  socio=fields.Many2one('cdpelotas3763_y.socios',string="Socio") 
  instalacion=fields.Many2one('cdpelotas3763_y.instalaciones',string="instalaciones",ondelete="cascade")
- fecha_reservas=fields.Datetime(string="Fecha de Reserva")
+ fecha_reservas=fields.Date(string="Fecha de Reserva")
  
