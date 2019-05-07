@@ -25,11 +25,11 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/socios.xml',
+        #'views/socios.xml',
         'views/instalaciones.xml',
         'views/reservas.xml',
         'views/deportes.xml',
-        'reportes/informes_socios.xml',
+        #'reportes/informes_socios.xml',
         'reportes/informes_deportes.xml',
         'reportes/informes_instalaciones.xml',
     ],
