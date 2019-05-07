@@ -11,7 +11,7 @@
           <field name="direccion"/>
           <field name="telefono"/>
           <field name="fecha_alta"/>
-          <field name="reservas_realizadas"/>
+          <!-- <field name="reservas_realizadas"/> -->
         </tree>
       </field>
     </record>
@@ -29,7 +29,7 @@
               <field name="direccion"/>
               <field name="telefono"/>
               <field name="fecha_alta"/>
-              <field name="reservas_realizadas"/>
+              <!-- <field name="reservas_realizadas"/> -->
             </group>
         </form>
       </field>
