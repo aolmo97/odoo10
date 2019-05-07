@@ -24,7 +24,7 @@
                 <field name="socio"/>
                 <field name="instalacion"/>
                 <field name="fecha_reservas"/>
-                 <field name="horas"/>
+                <field name="horas"/>
             </group>
         </form>
       </field>
