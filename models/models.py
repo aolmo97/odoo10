@@ -58,8 +58,9 @@ class Reservas(models.Model):
  socio=fields.Many2one('cdpelotas3763_y.socios',string="Socio") 
  instalacion=fields.Many2one('cdpelotas3763_y.instalaciones',string="instalaciones")
  fecha_reservas=fields.Date(string="Fecha de Reserva",required=True)
- @api.one
- @api.constrains('fecha_reservas')
+ hora = fields.Float(string='Hora', compute="_compute_time")
+#  @api.one
+#  @api.constrains('fecha_reservas')
 #  def _check_name_size(self):
 #       ultima_fecha=self.env['cdpelotas3763_y.reservas'].browse(1,9999)
 #   print("<script>alert('Datos 11')</script>")
