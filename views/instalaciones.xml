@@ -15,6 +15,7 @@
           <field name="reservas"> 
              <field name="socio">
                 <field name="nombre"/>
+                <field name="apellidos"/>
              </field>
              <field name="instalaciones">
                 <field name="nombre_pista"/>
