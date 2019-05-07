@@ -9,7 +9,7 @@ class Deporte(models.Model):
   nombre_deporte = fields.Char(string="Nombre del Deporte")
   instalaciones_asociadas=fields.One2many('cdpelotas3763_y.instalaciones',
      'deporte_asociado',
-     string="Instalaciones Asociadas"
+     string="Instalaciones Asociadas",ondelete="cascade"
   )
 #Modelo Socio
 class Socio(models.Model):
@@ -25,10 +25,7 @@ class Socio(models.Model):
  direccion = fields.Char(string="Direccion")
  telefono = fields.Integer(string="Teléfono")
  fecha_alta = fields.Date(string="Fecha de Alta")
- reservas_realizadas=fields.One2many('cdpelotas3763_y.reservas',
-     'socio',
-     string="Reservas Realizadas"
-  )
+ reservas_realizadas=fields.One2many('cdpelotas3763_y.reservas','socio',string="Reservas Realizadas",ondelete="cascade")
  #Modelo Instalaciones
 class Instalaciones(models.Model):
  _name = 'cdpelotas3763_y.instalaciones'
@@ -43,7 +40,7 @@ class Instalaciones(models.Model):
  luz = fields.Selection([('si','Si'),('no','No')])
  precio = fields.Integer(string="Precio/hora de la pista")
  estado = fields.Selection([('disponible','Disponible'),('mantenimiento','Mantenimiento')])
- deporte_asociado=fields.Many2one('cdpelotas3763_y.deportes',string= "Deporte")
+ deporte_asociado=fields.Many2one('cdpelotas3763_y.deportes',string= "Deporte",ondelete="cascade" )
  #Campo reservas
  reservas=fields.One2many('cdpelotas3763_y.reservas',
      'instalacion',
@@ -56,6 +53,6 @@ class Reservas(models.Model):
   'UNIQUE (fecha_reservas,instalacion)',
   'Ya existe una reserva en ese intervalo de tiempo')]
  socio=fields.Many2one('cdpelotas3763_y.socios',string="Socio") 
- instalacion=fields.Many2one('cdpelotas3763_y.instalaciones',string="instalaciones")
+ instalacion=fields.Many2one('cdpelotas3763_y.instalaciones',string="instalaciones",ondelete="cascade")
  fecha_reservas=fields.Datetime(string="Fecha de Reserva")
  
