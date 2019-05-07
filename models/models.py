@@ -6,7 +6,7 @@ from odoo.exceptions import ValidationError
 class Deporte(models.Model):
   _name = 'cdpelotas3763_y.deportes'
   _rec_name='nombre_deporte'
-  nombre_deporte = fields.Char(string="Nombre del Deporte")
+  nombre_deporte = fields.Char(string="Nombre del Deporte",required=True)
   instalaciones_asociadas=fields.One2many('cdpelotas3763_y.instalaciones',
      'deporte_asociado',
      string="Instalaciones Asociadas",ondelete="cascade"
@@ -19,12 +19,12 @@ class Socio(models.Model):
    ('nom_socio_id',
    'UNIQUE (num_socio)',
    'Ya existe un numero de socio con ese id')]
- num_socio = fields.Integer(string="Numero de socio")
- nombre = fields.Char(string="Nombre")
- apellidos = fields.Char(string="Apellidos")
+ num_socio = fields.Integer(string="Numero de socio",required=True)
+ nombre = fields.Char(string="Nombre",required=True)
+ apellidos = fields.Char(string="Apellidos",required=True)
  direccion = fields.Char(string="Direccion")
  telefono = fields.Integer(string="Teléfono")
- fecha_alta = fields.Date(string="Fecha de Alta")
+ fecha_alta = fields.Date(string="Fecha de Alta",required=True)
  reservas_realizadas=fields.One2many('cdpelotas3763_y.reservas','socio',string="Reservas Realizadas",ondelete="cascade")
  #Modelo Instalaciones
 class Instalaciones(models.Model):
@@ -34,8 +34,8 @@ class Instalaciones(models.Model):
         ('num_pista_id',
          'UNIQUE (num_pista)',
          'Ya existe un numero de pista con ese id')]
- num_pista = fields.Integer(string="Numero de pista")
- nombre_pista = fields.Char(string="Nombre de Pista")
+ num_pista = fields.Integer(string="Numero de pista",required=True)
+ nombre_pista = fields.Char(string="Nombre de Pista",required=True)
  superficie = fields.Selection([('cemento','Cemento'),('hierba','Hierba'),('moqueta','Moqueta'),('tierra','Tierra')])
  luz = fields.Selection([('si','Si'),('no','No')])
  precio = fields.Integer(string="Precio/hora de la pista")
@@ -52,7 +52,7 @@ class Reservas(models.Model):
   ('num_reserva_id',
   'UNIQUE (fecha_reservas,horas,instalacion)',
   'Ya existe una reserva en ese intervalo de tiempo')]
- socio=fields.Many2one('cdpelotas3763_y.socios',string="Socio") 
- instalacion=fields.Many2one('cdpelotas3763_y.instalaciones',string="instalaciones",ondelete="cascade")
- fecha_reservas=fields.Date(string="Fecha de Reserva")
+ socio=fields.Many2one('cdpelotas3763_y.socios',string="Socio",required=True) 
+ instalacion=fields.Many2one('cdpelotas3763_y.instalaciones',string="instalaciones",ondelete="cascade",required=True)
+ fecha_reservas=fields.Date(string="Fecha de Reserva",required=True)
  horas = fields.Integer(string="horas")
