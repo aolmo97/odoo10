@@ -60,4 +60,9 @@ class Reservas(models.Model):
  fecha_reservas=fields.Date(string="Fecha de Reserva",required=True)
  @api.one
  @api.constrains('fecha_reservas')
+#  def _check_name_size(self):
+#       ultima_fecha=self.env['cdpelotas3763_y.reservas'].browse(1,9999)
+#   print("<script>alert('Datos 11')</script>")
+#   if len(self.ultima_fecha) > 5:
+#       raise ValidationError('Must have 5 chars! ')
  
