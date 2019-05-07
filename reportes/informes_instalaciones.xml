@@ -27,7 +27,7 @@
                                     <th class="text-center">Fecha reserva</th>
                                 </tr>
                                 <tr class="text-center">   
-                                        <td><span t-field="o.socio.nombre"/> <span t-field="o.socio.apellidos"/></td>
+                                        <td><span t-field="o.reservas.socio.nombre"/> <span t-field="o.reservas.socio.apellidos"/></td>
                                         <td><span t-field="o.reservas.fecha_reservas"/><span t-field="o.reservas.horas"/></td>
                                 </tr>
                             </table>
