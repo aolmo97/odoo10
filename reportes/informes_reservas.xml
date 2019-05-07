@@ -15,7 +15,7 @@
                          <tr class="text-center" >   
                             <td> <span t-field="s.socio.nombre"/></td>
                             <td> <span t-field="s.instalacion.nombre_pista"/></td>
-                            <td><span t-field="s.fecha_reserva"/> <span t-field="s.horas">/</td>
+                            <td><span t-field="s.fecha_reserva"/> <span t-field="s.horas"/></td>
                                
                          </tr>
                         </table>
