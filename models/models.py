@@ -58,7 +58,15 @@ class Reservas(models.Model):
  socio=fields.Many2one('cdpelotas3763_y.socios',string="Socio") 
  instalacion=fields.Many2one('cdpelotas3763_y.instalaciones',string="instalaciones")
  fecha_reservas=fields.Date(string="Fecha de Reserva",required=True)
- hora = fields.Float(string='Hora', compute="_compute_time")
+ horas = fields.Float(string="horas", compute='_get_hours', inverse='_set_hours')
+@api.depends('duration')
+def _get_hours(self):
+        for r in self:
+            r.hours = r.duration * 24
+
+def _set_hours(self):
+        for r in self:
+            r.duration = r.hours / 24
 #  @api.one
 #  @api.constrains('fecha_reservas')
 #  def _check_name_size(self):

@@ -11,7 +11,7 @@
           </field>
           <field name="instalacion"/>
           <field name="fecha_reservas"/>
-          <field name="time" widget="float_time"/>
+          <field name="horas"/>
         </tree>
       </field>
   </record>
@@ -25,7 +25,7 @@
                 <field name="socio"/>
                 <field name="instalacion"/>
                 <field name="fecha_reservas"/>
-                <field name="time" widget="float_time"/>
+                <field name="horas"/>
             </group>
         </form>
       </field>
