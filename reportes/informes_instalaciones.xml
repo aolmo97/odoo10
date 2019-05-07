@@ -26,8 +26,9 @@
                                     <th class="text-center">Socio</th>
                                     <th class="text-center">Fecha reserva</th>
                                 </tr>
-                                <tr class="text-center">   
-                                        <td><span t-field="o.reservas"/> </td>
+                                <tr class="text-center" t-foreach="o.reservas" t-as="r">   
+                                        <td><span t-field="r.socio.nombre"/> </td>
+                                        <td><span t-field="r.fecha_reserva"/> </td>
                                 </tr>
                             </table>
                         
