@@ -28,7 +28,7 @@
                                 </tr>
                                 <tr class="text-center" t-foreach="o.reservas" t-as="r">   
                                         <td><span t-field="r.socio.nombre"/> </td>
-                                        <td><span t-field="r.fecha_reserva"/> </td>
+                                        <td><span t-field="r.fecha_reservas"/> </td>
                                 </tr>
                             </table>
                         
