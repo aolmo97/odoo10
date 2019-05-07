@@ -58,9 +58,4 @@ class Reservas(models.Model):
  socio=fields.Many2one('cdpelotas3763_y.socios',string="Socio") 
  instalacion=fields.Many2one('cdpelotas3763_y.instalaciones',string="instalaciones")
  fecha_reservas=fields.Datetime(string="Fecha de Reserva")
- @api.one
- @api.constrains('fecha_reservas')
- def _check_name_size(self):
-  if len(self.name) > 5:
-    raise ValidationError('Must have 5 chars!')
  
