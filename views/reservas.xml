@@ -39,5 +39,13 @@
     <menuitem name="CDPELOTAS3763Y" id="cdpelotas3763_y.menu_root"/>
     <!-- menu categories -->
     <menuitem name="Reservas" id="cdpelotas3763_y.reservas_list" parent="cdpelotas3763_y.menu_root" action="cdpelotas3763_y.action_window_reservas"/>
+    <!--Informe -->
+    <report id="cdpelotas3763_y.reservas_template_report"
+        name="cdpelotas3763_y.reservas_template_report_template"
+        file="cdpelotas3763_y.reservas_template_report_report_template"
+        model="cdpelotas3763_y.reservas"
+        report_type="qweb-pdf"
+        string="Listado de Reservas"
+        menu="True"/>
   </data>
 </odoo>

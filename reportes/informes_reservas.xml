@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="cdpelotas3763_y.reservas_template_report_template">
+        <t t-call="report.html_container">
+            <h1>Información de Reservas</h1>
+            <t t-foreach="docs" t-as="o">
+                <div class="page">
+                    <div class="reservas"  t-foreach="docs" t-as="s">
+                        <table border='1' class="table table-bordered mt32">
+                        <tr>
+                            <th class="text-center">Socio</th>
+                            <th class="text-center">Instalacion</th>
+                            <th class="text-center">Fecha Reserva</th>
+                        </tr>
+                         <tr class="text-center" >   
+                            <td> <span t-field="s.socio.nombre"/></td>
+                            <td> <span t-field="s.instalacion.nombre_pista"/></td>
+                            <td><span t-field="s.fecha_reserva"/> <span t-field="s.horas">/</td>
+                               
+                         </tr>
+                        </table>
+                    </div>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

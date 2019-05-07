@@ -32,6 +32,7 @@
         'reportes/informes_socios.xml',
         'reportes/informes_deportes.xml',
         'reportes/informes_instalaciones.xml',
+        'reportes/informes_reservas.xml',
     ],
     # # only loaded in demonstration mode
     # 'demo': [
